@@ -1,7 +1,7 @@
 # Modified Lollipops Project
 ## Basic Java Application
 
-*Application which counts lollipops for children**
+*Application which counts lollipops for children*
 
 **Java 8**
 
