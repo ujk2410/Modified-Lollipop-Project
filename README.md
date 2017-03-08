@@ -1,7 +1,7 @@
-# Modified Lollipop Project
-## Basic Project Structure
+# Modified Lollipops Project
+## Basic Java Application
 
-*Default Structure for A Modified Project*
+*Application which counts lollipops for children**
 
 **Java 8**
 
