@@ -24,16 +24,37 @@ public class AppBasics {
 
 	static Scanner scanner = new Scanner(System.in);
 
+	/**
+	 * Helper method to farewell user given the appName and user name.
+	 */
 	public static void farewellUser(String appName, String user) {
-		System.out.println("Thank you for using the " + appName + " " + user + ", have a great day!");
+		System.out.println("Thank you for using the " + appName + " app " + user + ", have a great day!");
 	}
 
 	/**
-	 * 
+	 * @param question
+	 * @return
+	 */
+	public static double requestDouble(String question) {
+		String input;
+		double count = 0;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print(question + " ");
+		input = scanner.nextLine();
+		try {
+			count = Integer.parseInt(input.trim());
+		} catch (NumberFormatException e) {
+			System.out.println("You have not entered a correct numerical value (" + input + ")\nUsing 0 for set value");
+		}
+		return count;
+	}
+
+	/**
+	 * Helper method to welcome user and return their supplied name.
 	 */
 	public static String welcomeUserAndGetName(String appName) {
-		System.out.println("Welcome to the " + appName + " application.n");
-		System.out.print("Can I get your name? ");
+		System.out.println("Welcome to the " + appName + " application.\n");
+		System.out.print("Could I get your name? ");
 		return scanner.nextLine();
 	}
 }
